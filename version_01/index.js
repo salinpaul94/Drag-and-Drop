@@ -13,5 +13,13 @@ for (let list of lists) {
       rightBox.appendChild(selected);
       selected = null;
     });
+
+    leftBox.addEventListener("dragover", function (e) {
+      e.preventDefault();
+    });
+    leftBox.addEventListener("drop", function (e) {
+      leftBox.appendChild(selected);
+      selected = null;
+    });
   });
 }
