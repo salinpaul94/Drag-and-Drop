@@ -6,8 +6,11 @@ for (let list of lists) {
   list.addEventListener("dragstart", function (e) {
     let selected = e.target;
 
-    rightBox.addEventListener("dragove", function (e) {
+    rightBox.addEventListener("dragover", function (e) {
       e.preventDefault();
+    });
+    rightBox.addEventListener("drop", function (e) {
+      rightBox.appendChild(selected);
     });
   });
 }
