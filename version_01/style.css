@@ -4,3 +4,12 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
+.container {
+  background: #0b0423;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
